@@ -7,8 +7,8 @@ import { LoggingInterceptor } from "./logging.interceptor.js";
 
 describe("LoggingInterceptor", () => {
   let interceptor: LoggingInterceptor;
-  let logSpy: ReturnType<typeof vi.fn>;
-  let warnSpy: ReturnType<typeof vi.fn>;
+  let logSpy: ReturnType<typeof vi.fn<(message: unknown) => void>>;
+  let warnSpy: ReturnType<typeof vi.fn<(message: unknown) => void>>;
 
   beforeEach(() => {
     let t = 1000;
@@ -18,8 +18,8 @@ describe("LoggingInterceptor", () => {
       t += 5;
       return current;
     });
-    logSpy = vi.fn();
-    warnSpy = vi.fn();
+    logSpy = vi.fn<(message: unknown) => void>();
+    warnSpy = vi.fn<(message: unknown) => void>();
     vi.spyOn(interceptor["logger"], "log").mockImplementation(logSpy);
     vi.spyOn(interceptor["logger"], "warn").mockImplementation(warnSpy);
   });
