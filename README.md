@@ -10,7 +10,7 @@
 [![CI](https://github.com/Viprasol-Tech/nestjs-boilerplate/actions/workflows/ci.yml/badge.svg)](https://github.com/Viprasol-Tech/nestjs-boilerplate/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6.svg)](https://www.typescriptlang.org/)
-[![NestJS](https://img.shields.io/badge/NestJS-10-e0234e.svg)](https://nestjs.com/)
+[![NestJS](https://img.shields.io/badge/NestJS-11-e0234e.svg)](https://nestjs.com/)
 [![Vitest](https://img.shields.io/badge/tested%20with-vitest-6E9F18.svg)](https://vitest.dev/)
 [![Tests](https://img.shields.io/badge/tests-94%20passing-brightgreen.svg)](#-testing)
 [![Version](https://img.shields.io/badge/version-0.2.0-blue.svg)](CHANGELOG.md)
